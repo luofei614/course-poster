@@ -34,22 +34,6 @@
 
 ---
 
-## 海报风格展示
-
-同一套内容，AI 会根据课程类型生成不同视觉。下面 5 张为各风格样张：
-
-| 风格 | 样张 |
-|---|---|
-| **AI · 深空紫蓝（星轨）** | ![AI 风格](examples/demo-purple-tech.png) |
-| **商务 · 宝蓝（点阵）** | ![商务风格](examples/demo-blue-business.png) |
-| **金融 · 深蓝金线** | ![金融风格](examples/demo-gold-wealth.png) |
-| **管理 · 草绿波纹** | ![管理风格](examples/demo-green-classic.png) |
-| **电商 · 午夜蓝点阵** | ![电商风格](examples/demo-midnight-ecom.png) |
-
-> 实际出图由 AI 根据你所给课程内容自动选定风格，无需你从上面挑。
-
----
-
 ## 安装到智能体
 
 **不需要命令行、不需要懂 Git。** 给你正在用的任意智能体发一句话即可：
@@ -108,6 +92,22 @@ AI：（生成 course-poster.png + course-poster.html）
 - **改文案重渲**：直接说「把价格改成 199 元，重新出图」，AI 改局部重渲，不动布局。
 
 > 字体、字号、渲染细节等高级自定，参见仓库内 `SKILL.md`。
+
+---
+
+## 海报风格展示
+
+同一套内容，AI 会根据课程类型生成不同视觉。下面 5 张为各风格样张：
+
+| 风格 | 样张 |
+|---|---|
+| **AI · 深空紫蓝（星轨）** | ![AI 风格](examples/demo-purple-tech.png) |
+| **商务 · 宝蓝（点阵）** | ![商务风格](examples/demo-blue-business.png) |
+| **金融 · 深蓝金线** | ![金融风格](examples/demo-gold-wealth.png) |
+| **管理 · 草绿波纹** | ![管理风格](examples/demo-green-classic.png) |
+| **电商 · 午夜蓝点阵** | ![电商风格](examples/demo-midnight-ecom.png) |
+
+> 实际出图由 AI 根据你所给课程内容自动选定风格，无需你从上面挑。
 
 ---
 
