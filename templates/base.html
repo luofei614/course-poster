@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="{{ ASSETS }}/fonts/fonts.css">
+<link rel="stylesheet" href="{{ ASSETS }}/blocks.css">
+<style>
+:root{
+  --bg: {{ theme.background }};
+  --primary: {{ theme.colors.primary }};
+  --accent: {{ theme.colors.accent }};
+  --text: {{ theme.colors.text }};
+  --muted: {{ theme.colors.muted }};
+  --font-body: {{ theme.font.body }};
+  --font-title: {{ theme.font.title }};
+}
+html, body { margin: 0; padding: 0; background: #05060a; }
+.poster-canvas{
+  width: 1080px;
+  margin: 0 auto;
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font-body);
+  color: var(--text);
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div class="poster-canvas">
+  <div class="decor">{{ decor_html | safe }}</div>
+  <div class="content">{{ blocks_html | safe }}</div>
+</div>
+</body>
+</html>

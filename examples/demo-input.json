@@ -1,0 +1,39 @@
+{
+  "course_title": "Excel 职场实战训练营",
+  "course_subtitle": "带你打破职场瓶颈，效率翻倍",
+  "teacher": {
+    "name": "高小定",
+    "title_lines": [
+      "office 专业讲师",
+      "办公软件国际认证大师",
+      "8 年企业管理工作经验"
+    ],
+    "avatar_path": "../assets/placeholders/avatar_placeholder.png"
+  },
+  "audience": [
+    "提高办公效率的职场人士",
+    "学习办公技能的大学生",
+    "想跳槽晋升的职场人"
+  ],
+  "outline": [
+    {
+      "phase": "前期预热阶段",
+      "items": ["学习规划与基础预热", "软件环境配置与快捷键"]
+    },
+    {
+      "phase": "正式进阶阶段",
+      "items": ["函数与公式实战", "数据透视表精通", "可视化图表设计"]
+    },
+    {
+      "phase": "实战演练阶段",
+      "items": ["真实业务案例拆解", "个人效率模板搭建"]
+    }
+  ],
+  "event": {
+    "time": "02/15 20:00",
+    "price": "原价 699 限时免费试学",
+    "cta": "扫码立即抢课"
+  },
+  "qrcode_path": "../assets/placeholders/qr_placeholder.png",
+  "template": "green-classic"
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CoursePosterInput",
+  "type": "object",
+  "description": "灵活海报输入：blocks 数组 + theme 主题 + topic 类型（内容感知）+ template 模板预设。扁平旧字段也会被归一化为 blocks。",
+  "properties": {
+    "topic": {"type": "string", "description": "课程类型，内容感知自动选风格：ai/finance/ecommerce/management/education/business"},
+    "template": {"type": "string", "description": "模板预设名（=预设JSON）：purple-tech/blue-business/midnight-ecom/gold-wealth/green-classic"},
+    "theme": {
+      "type": "object",
+      "description": "主题覆盖（深合并到解析出的基础主题上）",
+      "properties": {
+        "background": {"type": "string"},
+        "decor": {"type": "string", "description": "装饰motif：starfield/circuit/gradient_mesh/gold_lines/dots/waves/none"},
+        "colors": {
+          "type": "object",
+          "properties": {
+            "primary": {"type": "string"},
+            "accent": {"type": "string"},
+            "text": {"type": "string"},
+            "muted": {"type": "string"}
+          }
+        },
+        "font": {
+          "type": "object",
+          "properties": {
+            "body": {"type": "string"},
+            "title": {"type": "string"}
+          }
+        }
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "description": "内容块数组，可增删/排序/空缺",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": {"type": "string"}
+        },
+        "additionalProperties": true
+      }
+    },
+    "course_title": {"type": "string"},
+    "subtitle": {"type": "string"},
+    "teacher": {"type": "object"},
+    "audience": {"type": "array", "items": {"type": "string"}},
+    "outline": {"type": "array"},
+    "pain_point": {"type": "string"},
+    "event": {"type": "object"},
+    "cta": {"type": "object"},
+    "cutout": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

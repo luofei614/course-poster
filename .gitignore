@@ -1,0 +1,8 @@
+# 渲染/构建临时产物
+build/
+__pycache__/
+*.pyc
+*.tmp.png
+# 编辑器/系统
+.DS_Store
+Thumbs.db
